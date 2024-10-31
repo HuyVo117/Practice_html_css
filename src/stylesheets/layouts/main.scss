@@ -1,0 +1,15 @@
+@use './abstracts/variables';
+@use './abstracts/mixins';
+@use './layouts/footer';
+// Thêm các import cần thiết khác
+
+body {
+    font-family: $font-family;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
