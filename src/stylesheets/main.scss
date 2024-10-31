@@ -1,7 +1,4 @@
-@use './abstracts/variables';
-@use './abstracts/mixins';
-@use './layouts/footer';
-// Thêm các import cần thiết khác
+@use './abstracts/variables' as *;
 
 body {
     font-family: $font-family;

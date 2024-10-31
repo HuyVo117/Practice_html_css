@@ -23,14 +23,16 @@ module.exports = {
                     {
                         loader: 'posthtml-loader', // Sử dụng PostHTML để xử lý các plugin
                         options: {
-                            plugins: [
-                                require('posthtml-doctype')({
-                                    doctype: 'HTML 5' // Thiết lập doctype
-                                }),
-                                require('posthtml-include')({
-                                    root: path.resolve(__dirname, 'src') // Thư mục gốc cho các include
-                                })
-                            ]
+                            posthtmlOptions: {
+                                plugins: [
+                                    require('posthtml-doctype')({
+                                        doctype: 'HTML 5' // Thiết lập doctype
+                                    }),
+                                    require('posthtml-include')({
+                                        root: path.resolve(__dirname, 'src') // Thư mục gốc cho các include
+                                    })
+                                ]
+                            }
                         }
                     }
                 ]
