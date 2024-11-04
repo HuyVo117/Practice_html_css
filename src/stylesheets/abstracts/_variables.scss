@@ -1,0 +1,20 @@
+// Const colors name
+$color-primary: #EBCB80;
+$color-white: #fff;
+$text-color-primary: #333;
+$text-color-gray: #4B4B4B;
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Responsive breakpoints
+$extra-large: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 321px;
+$desktop: calc($extra-large - 0.5px);
+$tablet-mini: calc($large - 0.5px);
+$mphone: calc($medium - 0.5px);
+
+// Font
+$font-family: Roboto, sans-serif;
+$font-family: 'Arial, sans-serif';

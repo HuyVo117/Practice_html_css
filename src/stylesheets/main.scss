@@ -1,5 +1,12 @@
-@use "base";
-@use "components";
-@use "layouts/" as *;
-@use "pages";
-@use "abstracts";
+@use './abstracts/variables' as *;
+
+body {
+    font-family: $font-family;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
