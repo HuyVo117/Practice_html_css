@@ -1,9 +1,10 @@
+// src/stylesheets/abstracts/variables.scss
+
 // Const colors name
-$color-primary: #EBCB80;
+$primary-color: #3498db; // Example color
 $color-white: #fff;
 $text-color-primary: #333;
 $text-color-gray: #4B4B4B;
-$primary-color: #3498db;
 $secondary-color: #2ecc71;
 
 // Responsive breakpoints
@@ -16,5 +17,4 @@ $tablet-mini: calc($large - 0.5px);
 $mphone: calc($medium - 0.5px);
 
 // Font
-$font-family: Roboto, sans-serif;
-$font-family: 'Arial, sans-serif';
+$font-family: 'Arial, sans-serif'; // Updated to single definition

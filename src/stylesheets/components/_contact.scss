@@ -1,0 +1,98 @@
+// src/stylesheets/components/_contact.scss
+
+.contact {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 30px;
+    }
+
+    &__form-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .contact__label {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        & .contact__input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            &--textarea {
+                height: 100px;
+                resize: vertical;
+            }
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+
+        &__checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &-input {
+                margin-right: 10px;
+            }
+
+            &-text {
+                font-size: 1rem;
+                color: #555555;
+            }
+        }
+
+        &__button {
+            background-color: $primary-color;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 20px;
+            font-size: 1rem;
+            color: #555555;
+
+            & .contact__icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
