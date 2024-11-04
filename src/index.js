@@ -1,7 +1,7 @@
-// Import styles
-import './stylesheets/layouts/main.scss';
+// src/index.js
 
+// Corrected import path
+import './stylesheets/main.scss';
 
-
-// Your JavaScript code here
+// Your existing JavaScript code
 console.log('Application started');

@@ -1,0 +1,72 @@
+// src/stylesheets/components/_recent-products.scss
+
+.recent-products {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+    &__heading {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .product-card {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 22%;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+            &__image {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            &__title {
+                font-size: 1.5rem;
+                color: $secondary-color;
+                margin-bottom: 10px;
+            }
+
+            &__author {
+                font-size: 1rem;
+                color: #555555;
+                margin-bottom: 15px;
+            }
+
+            &__button {
+                background-color: $primary-color;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &--active {
+                    background-color: darken($primary-color, 10%);
+                }
+
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+}

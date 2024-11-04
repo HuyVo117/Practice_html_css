@@ -1,4 +1,14 @@
+// src/stylesheets/main.scss
+
 @use './abstracts/variables' as *;
+
+@use './components/stunning-results';
+@use './components/testimonial';
+@use './components/recent-products';
+@use './components/register';
+@use './components/comments';
+@use './components/plans';
+@use './components/contact';
 
 body {
     font-family: $font-family;

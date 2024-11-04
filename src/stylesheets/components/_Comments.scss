@@ -1,0 +1,87 @@
+// src/stylesheets/components/_comments.scss
+
+.comments {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 30px;
+    }
+
+    &__slider {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &__card {
+        padding: 20px;
+
+        &--yellow {
+            background-color: #fffacd;
+        }
+
+        &--gray {
+            background-color: #d3d3d3;
+        }
+
+        &__quote {
+            font-size: 1.2rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        &__author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-name {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $secondary-color;
+                margin-right: 10px;
+            }
+
+            &-role {
+                font-size: 0.9rem;
+                color: #555555;
+            }
+
+            &-image {
+                margin-left: 10px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        margin-top: 20px;
+
+        &-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #cccccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
