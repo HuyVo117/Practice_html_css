@@ -1,0 +1,73 @@
+// src/stylesheets/components/_testimonial.scss
+
+.testimonial {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+
+    &__heading {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        & .testimonial__arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        &--left {
+            left: -40px;
+        }
+
+        &--right {
+            right: -40px;
+        }
+
+        & .testimonial__text {
+            font-size: 1.2rem;
+            color: #333333;
+            margin: 0 40px;
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        &-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        &-info {
+            &-name {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $secondary-color;
+            }
+
+            &-handle {
+                font-size: 0.9rem;
+                color: #777777;
+            }
+        }
+    }
+}
