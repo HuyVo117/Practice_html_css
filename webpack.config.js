@@ -1,3 +1,5 @@
+// webpack.config.js
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -22,7 +24,7 @@ module.exports = {
                                     doctype: 'HTML 5'
                                 }),
                                 require('posthtml-include')({
-                                    root: path.resolve(__dirname, 'src')
+                                    root: path.resolve(__dirname, '/src/components')
                                 })
                             ]
                         }
@@ -42,10 +44,10 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
+                    'style-loader', // Injects styles into DOM
+                    'css-loader',   // Translates CSS into CommonJS
                     {
-                        loader: 'sass-loader',
+                        loader: 'sass-loader', // Compiles Sass to CSS
                         options: {
                             implementation: require('sass')
                         }
@@ -72,7 +74,7 @@ module.exports = {
             directory: path.join(__dirname, 'src'),
         },
         compress: true,
-        port: 8082,
+        port: 8083,
         hot: true,
         open: true
     },

@@ -1,4 +1,6 @@
 // src/stylesheets/components/_register.scss
+@use '../abstracts/variables' as *;
+@use 'sass:color';
 
 .Register--input {
     padding: 40px 20px;
@@ -11,7 +13,7 @@
 
         &__title {
             font-size: 2rem;
-            color: $primary-color;
+            color: gray;
             margin-bottom: 10px;
         }
 
@@ -25,6 +27,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: gray;
 
             & .register__label {
                 width: 100%;
@@ -39,13 +42,13 @@
                 border-radius: 4px;
 
                 &:focus {
-                    border-color: $primary-color;
+                    border-color: gray;
                     outline: none;
                 }
             }
 
             &__button {
-                background-color: $primary-color;
+                background-color: gray;
                 color: #ffffff;
                 border: none;
                 padding: 10px 20px;
@@ -54,7 +57,7 @@
                 transition: background-color 0.3s;
 
                 &:hover {
-                    background-color: darken($primary-color, 10%);
+                    background-color: gray;
                 }
             }
         }
