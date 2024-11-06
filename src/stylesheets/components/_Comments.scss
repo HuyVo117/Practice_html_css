@@ -1,4 +1,6 @@
 // src/stylesheets/components/_comments.scss
+@use '../abstracts/variables' as *;
+@use 'sass:color';
 
 .comments {
     padding: 40px 20px;
@@ -7,7 +9,7 @@
 
     &__title {
         font-size: 2rem;
-        color: $primary-color;
+        color: gray;
         margin-bottom: 30px;
     }
 
@@ -46,7 +48,7 @@
             &-name {
                 font-size: 1rem;
                 font-weight: bold;
-                color: $secondary-color;
+                color: gray;
                 margin-right: 10px;
             }
 
@@ -80,7 +82,7 @@
             cursor: pointer;
 
             &.active {
-                background-color: $primary-color;
+                background-color: gray;
             }
         }
     }

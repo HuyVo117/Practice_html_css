@@ -1,4 +1,6 @@
 // src/stylesheets/components/_recent-products.scss
+@use '../abstracts/variables' as *;
+@use 'sass:color';
 
 .recent-products {
     padding: 40px 20px;
@@ -40,7 +42,7 @@
 
             &__title {
                 font-size: 1.5rem;
-                color: $secondary-color;
+                color: gray;
                 margin-bottom: 10px;
             }
 
@@ -51,7 +53,7 @@
             }
 
             &__button {
-                background-color: $primary-color;
+                background-color: gray;
                 color: #ffffff;
                 border: none;
                 padding: 10px 20px;
@@ -60,11 +62,11 @@
                 transition: background-color 0.3s;
 
                 &--active {
-                    background-color: darken($primary-color, 10%);
+                    background-color: gray;
                 }
 
                 &:hover {
-                    background-color: darken($primary-color, 10%);
+                    background-color: gray;
                 }
             }
         }

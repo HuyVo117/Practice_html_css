@@ -1,4 +1,6 @@
 // src/stylesheets/components/_contact.scss
+@use '../abstracts/variables' as *;
+@use 'sass:color';
 
 .contact {
     padding: 40px 20px;
@@ -7,7 +9,7 @@
 
     &__title {
         font-size: 2rem;
-        color: $primary-color;
+        color: gray;
         margin-bottom: 30px;
     }
 
@@ -41,7 +43,7 @@
             }
 
             &:focus {
-                border-color: $primary-color;
+                border-color: gray;
                 outline: none;
             }
         }
@@ -62,7 +64,7 @@
         }
 
         &__button {
-            background-color: $primary-color;
+            background-color: gray;
             color: #ffffff;
             border: none;
             padding: 10px 20px;
@@ -71,7 +73,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: darken($primary-color, 10%);
+                background-color: gray;
             }
         }
     }
