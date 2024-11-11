@@ -1,20 +1,28 @@
-// src/stylesheets/abstracts/variables.scss
+// Colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$dark-color: #343a40;
+$light-color: #f8f9fa;
+$gold-color: #ffd700;
 
-// Const colors name
-$primary-color: #3498db; // Example color
-$color-white: #fff;
-$text-color-primary: #333;
-$text-color-gray: #4B4B4B;
-$secondary-color: #2ecc71;
+// Typography
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
 
-// Responsive breakpoints
-$extra-large: 1200px;
-$large: 992px;
-$medium: 768px;
-$small: 321px;
-$desktop: calc($extra-large - 0.5px);
-$tablet-mini: calc($large - 0.5px);
-$mphone: calc($medium - 0.5px);
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 
-// Font
-$font-family: 'Roboto', sans-serif;
+// Container
+$container-max-width: 1140px;
+$container-padding: 15px;
+
+// Border radius
+$border-radius: 4px;
+$border-radius-lg: 8px;
+
+// Transitions
+$transition-base: all 0.3s ease;
