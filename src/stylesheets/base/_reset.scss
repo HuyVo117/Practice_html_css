@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size-base;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    color: $dark-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}

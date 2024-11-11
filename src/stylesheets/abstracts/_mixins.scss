@@ -1,137 +1,58 @@
 @use './functions';
 @use './variables' as *;
 
-@mixin button($width: false, $height: false, $background-color: false, $border-radius: false, $border: false) {
-    @if $width !=false {
-        width: $width;
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==sm {
+        @media (min-width: $breakpoint-sm) {
+            @content;
+        }
     }
 
-    @if $height !=false {
-        height: $height;
+    @else if $breakpoint ==md {
+        @media (min-width: $breakpoint-md) {
+            @content;
+        }
     }
 
-    @if $background-color !=false {
-        background-color: $background-color;
+    @else if $breakpoint ==lg {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
     }
 
-    @if $border-radius !=false {
-        border-radius: $border-radius;
+    @else if $breakpoint ==xl {
+        @media (min-width: $breakpoint-xl) {
+            @content;
+        }
     }
+}
 
-    @if $border !=false {
-        border: $border;
-    }
-
+@mixin button-base {
+    padding: 12px 24px;
+    border: none;
+    border-radius: $border-radius;
     cursor: pointer;
+    transition: $transition-base;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-@mixin grid($grid-tplt-row: false, $grid-tplt-column: false, $justify-content: false, $align-items: false, $grid-gap: false) {
-    display: grid;
-
-    @if $grid-tplt-row !=false {
-        grid-template-rows: $grid-tplt-row;
-    }
-
-    @if $grid-tplt-column !=false {
-        grid-template-columns: $grid-tplt-column;
-    }
-
-    @if $justify-content !=false {
-        justify-content: $justify-content;
-    }
-
-    @if $align-items !=false {
-        align-items: $align-items;
-    }
-
-    @if $grid-gap !=false {
-        grid-gap: $grid-gap;
-    }
+@mixin section-padding {
+    padding: 80px 0;
 }
 
-@mixin font($font-family: false, $font-size: false, $font-weight: false, $font-style: false, $line-height: false, $color: false) {
-    @if ($font-family !=false) {
-        font-family: $font-family;
-    }
-
-    @if $font-size {
-        font-size: $font-size;
-    }
-
-    @if $font-weight {
-        font-weight: $font-weight;
-    }
-
-    @if $font-style {
-        font-style: $font-style;
-    }
-
-    @if $line-height {
-        line-height: $line-height;
-    }
-
-    @if $color {
-        color: $color;
-    }
-
-}
-
-@mixin flex($display: flex,
-    $direction: false,
-    $align: false,
-    $justify: false,
-    $wrap: false,
-    $gap: false) {
-    display: $display;
-
-    @if $direction {
-        flex-direction: $direction;
-    }
-
-    @if $align {
-        align-items: $align;
-    }
-
-    @if $justify {
-        justify-content: $justify;
-    }
-
-    @if $wrap {
-        flex-wrap: $wrap;
-    }
-
-    @if $gap {
-        gap: $gap;
-    }
-}
-
-@mixin bg-color($color) {
-    background-color: $color;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-@mixin desktop {
-    @media screen and (min-width: $extra-large) {
-        @content;
-    }
-}
-
-@mixin tablet-large {
-    @media screen and (max-width: $desktop) {
-        @content;
-    }
-}
-
-@mixin tablet-mini {
-    @media screen and (max-width: $tablet-mini) {
-        @content;
-    }
-}
-
-@mixin mobile {
-    @media screen and (max-width: $mobile) {
-        @content;
-    }
+@mixin card-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
